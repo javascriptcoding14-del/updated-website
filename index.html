@@ -19,7 +19,7 @@
         <h3 class="logo">FreshFold</h3> 
         <div class="nav">
             <a href="" class="nav-links">Home</a>
-            <a href="service.html" class="nav-links">Services</a>
+            <a href="#main2" class="nav-links">Services</a>
             <a href="about-contact.html" class="nav-links">Contact Us</a>
             <a href="about-contact.html" class="nav-links">About Us</a>
         </div>
@@ -45,9 +45,9 @@
                 <p>
                     We provide the best laundry services in town. We care for your clothes as if they were our own. We use the best detergents and fabric softeners to ensure that your clothes are clean and fresh. We also offer a wide range of services including dry cleaning, ironing, and folding. We are committed to providing our customers with the best possible service and we guarantee your satisfaction.
                 </p>
-                <button class="btn" onclick="window.location.href='service.html'" >
+                <a class="btn" id="hero-btn" href="#main2">
                    <i class="fa-solid fa-cart-shopping"></i>&nbsp;  Book a service toady!
-                </button>
+                </a>
             </div>
             <div id="div2">
                 <img src="resources/images/Laundry.png" alt="Laundry Image">
@@ -75,7 +75,147 @@
         
     </section>
 
-  <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <section class="main2" id="main2">
+        <section class="left">
+            <h2> Our Services</h2>
+            <p>Click on the add to cart button to add the
+                 services to your cart or press skip</p>
+            <div class="services-container">
+                <div class="service-name">
+                        <span id="service-name0">
+                           <i class="fa-solid fa-basket-shopping"></i> Dry Cleaning
+                        </span>
+                        <span class="price" id="service-price0">
+                            &#8377;200
+                        </span>
+                        <button class="add-item" id="add-btn1">
+                            Add Item <i class="fa-solid fa-plus"></i>
+                        </button>
+                </div>
+                <div class="service-name">
+                        <span id="service-name1">
+                           <i class="fa-solid fa-soap"></i> Wash & Fold
+                        </span>
+                        <span class="price" id="service-price1">
+                            &#8377;100
+                        </span>
+                        <button class="add-item" id="add-btn2">
+                            Add Item <i class="fa-solid fa-plus"></i>
+                        </button>
+                </div>
+                <div class="service-name">
+                        <span id="service-name2">
+                           <i class="fa-solid fa-shirt"></i> Ironing
+                        </span>
+                        <span class="price" id="service-price2">
+                            &#8377;30
+                        </span>
+                        <button class="add-item" id="add-btn3">
+                            Add Item <i class="fa-solid fa-plus"></i>
+                        </button>
+                </div>
+                <div class="service-name">
+                        <span id="service-name3">
+                            <i class="fa-solid fa-soap"></i>Stain Removal
+                        </span>
+                        <span class="price" id="service-price3">
+                            &#8377;500
+                        </span>
+                        <button class="add-item" id="add-btn4">
+                            Add Item <i class="fa-solid fa-plus"></i>
+                        </button>
+                </div>
+                <div class="service-name">
+                        <span id="service-name4">
+                            <i class="fa-solid fa-vest"></i> Leather Cleaning
+                        </span>
+                        <span class="price" id="service-price4">
+                            &#8377;999
+                        </span>
+                        <button class="add-item" id="add-btn5">
+                            Add Item <i class="fa-solid fa-plus"></i>
+                        </button>
+                </div>
+                <div class="service-name">
+                        <span id="service-name5">
+                           <i class="fa-solid fa-person-dress"></i> Wedding Dress Cleaning
+                        </span>
+                        <span class="price" id="service-price5">
+                            &#8377;2000
+                        </span>
+                        <button class="add-item">
+                            Add Item <i class="fa-solid fa-plus"></i>
+                        </button>
+                </div>
+
+            </div>
+            <span class="note">
+                   <a href=""><i class="bi bi-info-circle"></i>
+                    Add the items to the cart and book now</a>
+            </span>
+        </section>
+        <section class="right">
+                <div class="upper-box" id="upper-box">
+                    <h3>Added Items</h3>
+                    <div class="first">
+                        <h6>Sr No.</h6>
+                        <h6 class="service">Service Name</h6>
+                        <h6 class="price">Price</h6>
+                    </div>
+                    <div class="second" id="empty-cart">
+                        <div class="empty-msg" id="empty-msg">
+                            <i class="bi bi-info-circle"></i>
+                            <h4>No items Added</h4>
+                            <p>Add item to the Cart from the service bar</p>
+                        </div>
+                    </div>
+                     <div class="third">
+                        <span>
+                            Total Amount
+                        </span>
+                         <span id="total-price">
+                            &#8377;0
+                         </span>
+                     </div>
+                </div>
+                <div class="lower-box" id="lower-box">
+                        <h3>Book Now</h3>
+                        <form id="form" class="form" name="form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" class="form-group" placeholder="Enter your name" 
+                                id="name"  name="name" required>
+                            </div>
+                            <div class="form-group1">
+                                <div class="form-group">
+                                    <label for="email">Email ID</label>
+                                     <input type="email" name="email" placeholder="Email" 
+                                     id="email"  required>
+                                </div>
+                                <div class="form-group">
+
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="xxxxxxxxxx" 
+                                    id="phone"  required>
+                                </div>
+                            </div>
+                             <button  class="book-now" id="book-now">
+                                 Book Now
+                            </button>
+                            <span id="booking-content"></span>
+
+                        </form>
+                       
+                </div>
+                
+        </section>
+       
+    </section>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>  
 <script src="resources/js/script.js"></script>
 </body>
