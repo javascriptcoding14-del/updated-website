@@ -10,7 +10,6 @@ This project is a small website that shows laundry services, contact information
 ## Pages
 - `index.html` - Home page
 - `about-contact.html` - About the service and contact info
-- `service.html` - Details about laundry services
 
 ## Files
 - `resources/css/` - styles for the pages
